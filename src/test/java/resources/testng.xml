@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="George Regression" verbose="10" thread-count="4">
+    <listeners>
+        <listener class-name="hu.robertszujo.seleniumproject.TestListener"/>
+    </listeners>
+    <test name="Suite with listener" preserve-order="true" parallel="classes" verbose="1">
+        <packages>
+            <package name="hu.robertszujo.seleniumproject.*"/>
+        </packages>
+    </test>
+</suite>
